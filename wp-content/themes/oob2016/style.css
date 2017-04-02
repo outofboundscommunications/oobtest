@@ -1,0 +1,110 @@
+/*
+Theme Name:  OOB 2016
+Theme URI:   http://www.potenzaglobalsolutions.com
+Description: Child theme of Twenty Twelve for Out of Bounds
+Author:      Dinesh Kesarwani
+Author URI:  http://www.potenzaglobalsolutions.com
+Template:    twentytwelve
+Version:     1.0
+*/
+
+/* @import url("../twentytwelve/style.css"); */
+
+#page-banner{
+	background:#000;
+	height:100%;
+	min-height:660px;
+	position:relative;
+	text-align:center;
+	margin-bottom:0;
+	overflow:hidden
+}
+#page-banner .hero-overlay{position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,.55);
+	z-index:2
+}
+#page-banner .page-banner-video{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:1;
+	background:url('images/banner-background.jpg');
+	background-position:10% center;
+	background-size:cover
+}
+#page-banner .page-banner-video video{
+	display:none
+}
+#page-banner .page-banner-content{
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	z-index:3
+}
+#page-banner #hero-down-arrow{
+	position:absolute;
+	z-index:2;
+	left:50%;
+	bottom:30px;
+	width:75px;
+	margin-left:-37.5px;
+	-webkit-transform-origin:center bottom;
+	transform-origin:center bottom;
+	-webkit-animation:bounce 1.5s both infinite;
+	animation:bounce 1.5s both infinite;
+	cursor:pointer
+}
+#page-banner .canvas-logo,
+#page-banner .canvas-wordmark{
+	display:block;margin:0 auto
+}
+#page-banner .canvas-wordmark{
+	margin-bottom:25px;max-width:250px
+}
+#page-banner .canvas-logo{
+	margin-bottom:45px;max-width:85px
+}
+#page-banner h1,
+#page-banner h2,
+#page-banner p{
+	color:#fff;opacity:1
+}
+#page-banner p{
+	margin-bottom:30px
+}
+@media screen and (min-width:768px){
+	#hero{margin-bottom:56px}
+	#page-banner .hero-overlay{display:none}
+	#page-banner .page-banner-video video{
+		-webkit-backface-visibility:hidden;
+		backface-visibility:hidden;
+		display:block;
+		position:absolute;
+		top:50%;
+		left:50%;
+		-webkit-transform:translateX(-50%) translateY(-50%);
+		transform:translateX(-50%) translateY(-50%);
+		min-width:100%;
+		min-height:100%;
+		z-index:1
+	}
+}
+@-webkit-keyframes bounce{
+	0%,to{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}
+	0%,50%,to{transition-timing-function:cubic-bezier(.445,.05,.55,.95)}
+	50%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}
+}
+@keyframes bounce{
+	0%,to{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}
+	0%,50%,to{transition-timing-function:cubic-bezier(.445,.05,.55,.95)}
+	50%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}
+}

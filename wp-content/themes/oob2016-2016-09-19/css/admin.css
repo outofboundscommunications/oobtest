@@ -1,0 +1,14 @@
+.acf-field.acf-field-message {
+  border-top: 3px solid #0073aa;
+}
+.acf-field.acf-field-message .acf-label {
+  margin-bottom: 0;
+}
+.acf-field.acf-field-message .acf-label label {
+  color: #0073aa;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.acf-field.acf-field-message .acf-input > p {
+  margin-top: 0;
+}
